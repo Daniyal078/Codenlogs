@@ -47,7 +47,7 @@ html, body {
     color: #606060 !important
 }
 
-.side-nav-tog{
+.side-nav-tog {
     position: absolute;
     left: 80px;
 }
@@ -181,6 +181,20 @@ a {
 }
 
 
+.Packages::-webkit-scrollbar {
+    background-color: gray;
+    width: 5px;
+}
+
+.Packages::-webkit-scrollbar-thumb {
+    background-color: #bdbdbd;
+}
+
+.Packages-main:hover {
+    background-image: url('images/packageBg.png') !important;
+    background-repeat: repeat;
+}
+
 .top-elevated {
     position: relative;
     top: -60px;
@@ -225,7 +239,8 @@ footer .arrow {
         height: 650px;
         object-fit: cover;
     }
-    .side-nav-tog{
+
+    .side-nav-tog {
         position: static;
     }
 }
