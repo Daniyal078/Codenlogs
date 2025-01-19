@@ -8,6 +8,7 @@ html, body {
     width: 100%;
     min-width: 360px;
     height: 100vh;
+    scroll-behavior: smooth;
     font-family: sans-serif;
 }
 
@@ -253,5 +254,9 @@ footer .arrow {
     .home-banner-vid {
         height: 600px;
         object-fit: cover;
+    }
+    .home-banner-nav{
+        position: absolute;
+        bottom: 20px;
     }
 }

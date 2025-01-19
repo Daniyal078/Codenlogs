@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="accets/images/WebzVision-Transparent BG-Fav Icon.png">
     <link rel="stylesheet" href="accets/style.css">
     <link rel="stylesheet" href="accets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
@@ -15,6 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="accets/Data.js"></script>
     <title>Home</title>
 </head>
 
@@ -71,7 +73,24 @@
         border-bottom: 3px solid #e83633;
         color: #ffffff !important;
     }
+
+    .portfolio-image {
+        position: relative;
+    }
+
+    /* .portfolio-image::before {
+        content: " 1";
+        position: absolute;
+        z-index: 10px;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #e83633;
+    } */
 </style>
+
+
 
 <body>
     <!-- navbar -->
@@ -81,11 +100,11 @@
 
         <div class="position-relative top-0 ">
             <nav class="d-flex">
-                <div class="container d-flex align-items-center">
+                <div class="container d-flex align-items-center py-3">
                     <div class=" side-nav-tog">
                         <i class="fs-1 text-white ri-menu-line"></i>
                     </div>
-                    <a class="navbar-brand" href="home.html"><img src="accets/images/logo_lite.png" width="100%"
+                    <a class="navbar-brand" href="home.html"><img src="accets/images/logo_lite.png" width="250dvw"
                             alt=""></a>
                 </div>
             </nav>
@@ -94,9 +113,8 @@
                 <div>
                     <div class="text-white display-1 fw-bold lh-1">Website<br>Design</div>
 
-                    <div class="text-white display-6 fw-semibold my-5">Give your brand a much needed <br>
-                        boost with our tailor-made websites.
-                    </div>
+                    <div class="text-white display-6 fw-semibold my-5">Give your brand the boost it deserves with <br>
+                        our custom-tailored websites.</div>
                 </div>
             </div>
         </div>
@@ -107,19 +125,18 @@
     <div class="side-nav">
         <i class="ri-close-large-line fs-2 text-muted side-nav-close"></i>
         <ul class="p-0 m-0">
-            <li><a href="#">Logo Design</a></li>
-            <li><a href="#">Website Design</a></li>
-            <li><a href="#">NFT Design</a></li>
-            <li><a href="#">Printing</a></li>
-            <li><a href="#">SEO</a></li>
-            <li><a href="#">Mobile Application</a></li>
-            <li><a href="#">Video Animation</a></li>
-            <li><a href="#">About Us</a></li>
+            <li><a href="Logo-design.html">Logo Design</a></li>
+            <li><a href="Web-developement.html">Website Design</a></li>
+            <li><a href="NFT-Design.html">NFT Design</a></li>
+            <li><a href="Printing.html">Printing</a></li>
+            <li><a href="SEO.html">SEO</a></li>
+            <li><a href="Mobile-Applications.html">Mobile Application</a></li>
+            <li><a href="Video-Animations.html">Video Animation</a></li>
+            <li><a href="About-us.html">About Us</a></li>
             <li><a href="#">Packages</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
-
     </div>
     <!-- side navbar end -->
 
@@ -127,7 +144,7 @@
 
 
 
-    <section class="py-5">
+    <section class="py-5" id="WebWeMake">
         <div class="container">
             <div class="responsive">
                 <div class="d-flex pb-4">
@@ -199,41 +216,34 @@
 
 
     <!-- Our Portfolio -->
-    <section class="py-5 dark-blue-bg">
+    <section class="py-5 dark-blue-bg" id="WebPortfolio">
         <div class="container p-md-2 px-4">
-            <div class="logo-design-text display-5 fw-xbold lh-1 mb-5">Our Portfolio <span class="text-white">
-                Speaks for Us</span></div>
-            <div class="row">
-                <div class="col-md-4 p-0">
-                    <div>
-                        <img src="accets/images/img-453049.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 p-0">
-                    <div>
-                        <img src="accets/images/img-453049.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 p-0">
-                    <div>
-                        <img src="accets/images/img-453049.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 p-0">
-                    <div>
-                        <img src="accets/images/img-453049.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 p-0">
-                    <div>
-                        <img src="accets/images/img-453049.jpg" width="100%" alt="">
-                    </div>
-                </div>
-                <div class="col-md-4 p-0">
-                    <div>
-                        <img src="accets/images/img-453049.jpg" width="100%" alt="">
-                    </div>
-                </div>
+            <div class="logo-design-text display-5 fw-xbold lh-1 mb-5">A Portfolio That Tells a Story</span></div>
+
+            <div class="row" id="web-portfolio">
+
+                <script>
+                    website.forEach(item => {
+                        document.querySelector('#web-portfolio').innerHTML += `
+                            <div div class="col-md-4 p-0">
+                                    <img class="portfolio-image" src=${item.img}
+                                        height="350px" width="100%" alt="" style="object-fit: cover; object-position: top;"
+                                        data-bs-toggle="modal" data-bs-target=#${item.id}>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id=${item.id} tabindex="-1" aria-labelledby="exampleModalLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-body p-0">
+                                                        <img src=${item.img}
+                                                            width="100%" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>`
+                    })
+                </script>
             </div>
 
         </div>
@@ -241,9 +251,8 @@
     <!-- Our Portfolio end -->
 
 
-
     <!--  Testimonials -->
-    <section class="py-5 dark-blue-bg">
+    <section class="py-5 dark-blue-bg" id="WebTest">
         <div class="container p-md-2 px-4">
 
             <div class="row">
@@ -295,7 +304,7 @@
     <!-- Testimonials end -->
 
 
-    <section class="py-5">
+    <section class="py-5" id="WebPackages">
         <div class="container">
             <div class="display-5 mb-4 fw-xbold">Packages</div>
             <div class="row flex-nowrap overflow-auto">
@@ -373,13 +382,12 @@
     </section>
 
 
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" id="WebChoose">
         <div class="">
             <div class="container">
                 <h1 class="fw-bold">Reasons to Choose Us</h1>
-                <div class="fs-5">We at Code n Logos thrive to ensure that our customers are completely satisfied with
-                    our
-                    work and we deliver unique projects that help you reach unmatchable levels of success.
+                <div class="fs-5">At Code n Logos, we are committed to ensuring our customers are fully satisfied. We
+                    deliver distinctive projects designed to help you achieve unmatched levels of success.
                 </div>
             </div>
         </div>
@@ -400,9 +408,10 @@
                 <div class="tab-pane active" id="11a">
                     <div class="text-black">
                         <div class="fw-bold fs-5">12 years of Experience</div>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta maxime corporis placeat
-                            rerum ea sunt quae, molestiae odio! Autem officia perferendis iure voluptate nam quae nobis
-                            incidunt distinctio omnis tenetur.</p>
+                        <p>With 12 years of experience, we have honed a proven development methodology that identifies
+                            the key elements necessary for building a successful online business. We apply this
+                            methodology to every client project, ensuring it meets all the objectives at hand.
+                        </p>
                     </div>
                 </div>
                 <div class="tab-pane" id="22a">
@@ -436,7 +445,7 @@
     </section>
 
 
-    <footer>
+    <footer id="WebOrder">
         <div class="container">
             <div class="logo-design-text display-5 fw-xbold lh-1 py-5">Start Getting <br> Results <span
                     class="text-white"> +1 (877) 818-9110</span></div>
@@ -524,11 +533,15 @@
     </script>
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
