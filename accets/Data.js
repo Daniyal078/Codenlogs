@@ -40,9 +40,6 @@ let website = [
     },
 ]
 
-
-
-
 let logos = {
     Abstract: [
         {
@@ -138,7 +135,7 @@ let logos = {
         },
 
     ],
-    
+
     Mascot: [
         {
             img: "accets/images/Logo Portfolio/Mascot/1.jpg"
@@ -164,9 +161,9 @@ let logos = {
         {
             img: "accets/images/Logo Portfolio/Mascot/15.jpg"
         },
-       
+
     ],
-    
+
     Minimal: [
         {
             img: "accets/images/Logo Portfolio/Minimal/4.jpg"
@@ -195,9 +192,9 @@ let logos = {
         {
             img: "accets/images/Logo Portfolio/Minimal/44.jpg"
         },
-       
+
     ],
-    
+
     MonogramBadge: [
         {
             img: "accets/images/Logo Portfolio/Monogram, Badge/1.jpg"
@@ -223,7 +220,7 @@ let logos = {
         {
             img: "accets/images/Logo Portfolio/Monogram, Badge/1111.jpg"
         },
-       
+
     ],
 
     Vector3d: [
@@ -247,9 +244,9 @@ let logos = {
         },
         {
             img: "accets/images/Logo Portfolio/Vector 3d/15.jpg"
-        },       
+        },
     ],
-    
+
     Wordmark: [
         {
             img: "accets/images/Logo Portfolio/Wordmark/2.jpg"
@@ -272,6 +269,173 @@ let logos = {
         {
             img: "accets/images/Logo Portfolio/Wordmark/14.jpg"
         },
-        
+
     ],
+}
+
+
+
+let packages = {
+    logopack: [
+        {
+            id: "01",
+            name: "Logo Starter",
+            price: "$49",
+            list: [
+                "2 Initial Concepts",
+                "1 Dedicated Logo Designer",
+                "6 Revisions",
+                "With Grey Scale Format",
+                "Free Icon Design",
+                "100 % Unique Design",
+                "100 % Ownership Rights",
+                "File Formats: JPEG, PNG, PDF",
+                "24 Hours Turnaround Time",
+            ],
+        },
+        {
+            id: "02",
+            name: "Logo Plus Pro",
+            price: "$79",
+            list: [
+                "4 Initial Concepts",
+                "2 Dedicated Logo Designer",
+                "Unlimited Revisions",
+                "Industry Specific",
+                "With Grey Scale Format",
+                "Stationary Deisgn (Business Card, Letterhead, Envelope)",
+                "Email Signature",
+                "Free Icon Design",
+                "File Formats: JPEG, PNG, PDF, PSD, TIFF, SVG",
+                "24 Hours Turnaround Time",
+                "100% Ownership Rights",
+                "100% Unique Design",
+                "24/7 Support (Email, Chat, Call & Whatsapp)",
+            ],
+        },
+        {
+            id: "03",
+            name: "Platinum Logo Package",
+            price: "$199",
+            list: [
+                "10 Initial Concepts",
+                "2 Dedicated Logo Designer",
+                "Unlimited Revisions",
+                "Industry Specific",
+                "With Grey Scale Format",
+                "Stationary Design (Business Card, Letterhead, Envelope)",
+                "Email Signature",
+                "Free Icon Design",
+                "File Formats: JPEG, PNG, PDF, PSD, TIFF, SVG",
+                "24 Hours Turnaround Time",
+                "100% Ownership Rights",
+                "100% Unique Design",
+                "24/7 Support (Email, Chat, Call & WhatsApp)",
+            ],
+        },
+        {
+            name: "The Executive Logo",
+            price: "$299",
+            list: [
+                "3D/Mascot/Animated Logo",
+                "Unlimited Original Logo Concept:",
+                "4 Dedicated Logo Designer",
+                "(Industry Specific)",
+                "Unlimited Revisions",
+                "Stationery Design (Business Card",
+                "Letterhead. Envelope)",
+                "500 Business Cards",
+                "Email Signature Design",
+                "With Grey Scale Format",
+                "Free Icon Design",
+                "Formats: JPEG, PSD, EPS. Al PNG.",
+            ],
+        },
+        {
+            name: "Mascot Logo Design",
+            price: "$349",
+            list: [
+                "Unlimited Initial Concepts",
+                "8 Dedicated Logo Designer",
+                "Unlimited Revisions",
+                "Industry Specific",
+                "With Grey Scale Format",
+                "Stationary Design (Business Card, Letterhead, Envelope)",
+                "Email Signature",
+                "Social Media Designs (Facebook & Instagram)",
+                "Free Icon Design",
+                "File Formats: JPEG, PNG, PDF, PSD, AI, TIFF, SVG",
+                "24 Hours Turnaround Time",
+                "100% Ownership Rights",
+                "100% Unique Design",
+                "24/7 Support (Email, Chat, Call & WhatsApp)",
+            ],
+        },
+        {
+            name: "3D Logo Creations",
+            price: "$449",
+            list: [
+                "3 Unique 3D Logo Concepts",
+                "Light Effects and VFX",
+                "Fully Rendered",
+                "Multiple 3D Angles",
+                "3 Dedicated Designers",
+                "72 hours Tum Around Time",
+                "Unlimited Revisions ",
+                "MORE FEATURES",
+                "100% Ownership Rights",
+                "100% Satisfaction Guarantee",
+                "100% Unique Design Guarantee",
+            ],
+        },
+        {
+            name: "Infinite Logo Solutions",
+            price: "799",
+            list: [
+                "Unlimited Original Logo Concepts",
+                "12 Dedicated Logo Designer (industry Specific)",
+                "Unlimited Revisions",
+                "5 Page Informative Website",
+                "Stationery Design (Business Card, Letterhead, Envelope) ",
+                "Brand Book",
+                "500 Business Cards",
+                "500 Letterheads",
+                "Email Signature Design",
+                "Social Media Designs (Facebook. Twitter, Instagram)",
+                "2-Sided Flyer OR Bi-Fold Brochure Design ",
+                "With Grey Scale Format",
+                "Free Icon Design",
+                "Formats: JPEG. PSD. EPS, Al. PNG.TIFF. SVG",
+                "24 - 48 Hours Turn Around Time",
+                "MORE FEATURES",
+                "100% Satisfaction",
+                "100% Ownership Rights",
+            ],
+        },
+        {
+            name: "Logo Master Combo",
+            price: "999",
+            list: [
+                "Unlimited Original Logo Concepts",
+                "12 Dedicated Logo Designer (industry Specific)",
+                "Unlimited Revisions",
+                "7 Page Informative Website",
+                "Stationery Design (Business Card, Letterhead, Envelope)",
+                "Brand Book",
+                "500 Business Cards",
+                "500 Letterheads",
+                "Email Signature Design",
+                "Social Media Designs (Facebook, Twitter & Instagram) ",
+                "2-Sided Flyer OR Bi-Fold Brochure Design",
+                "With Grey Scale Format",
+                "Free Icon Design",
+                "Formats: JPEG, PSD, EPS, Al, PNG, TIFF, SVG",
+                "24 - 48 Hours Turn Around Time",
+                "MORE FEATURES",
+                "100 % Satisfaction",
+                "100 % Ownership Rights",
+                "Dedicated Account Manager",
+            ],
+        }
+    ]
 }

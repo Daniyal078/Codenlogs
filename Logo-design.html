@@ -402,76 +402,28 @@
     <section class="py-5" id="LogoPackages">
         <div class="container">
             <div class="display-5 mb-4 fw-xbold">Packages</div>
-            <div class="row flex-nowrap overflow-auto">
-                <div class="col-lg-4 col-md-6">
-                    <div class="dark-blue-bg text-white p-4 Packages-main">
-                        <div class="fs-4 fw-bold">3D Logo</div>
-                        <ul class="p-0 m-0 overflow-auto Packages" style="height: 250px;">
-                            <li class="my-1">3 Unique 3D Logo Concepts</li>
-                            <li class="my-1">Light Effects and VFX</li>
-                            <li class="my-1">Fully Rendered</li>
-                            <li class="my-1">Multiple 3D Angles</li>
-                            <li class="my-1">3 Dedicated Designers</li>
-                            <li class="my-1">72 hours Turn Around Time</li>
-                            <li class="my-1">UNLIMITED Revisions</li>
-                            <li class="my-1"><span>MORE FEATURES</span></li>
-                            <li class="my-1">100% Ownership Rights</li>
-                            <li class="my-1">100% Satisfaction Guarantee</li>
-                            <li class="my-1">100% Unique Design Guarantee</li>
-                            <li class="my-1">100% Money Back Guarantee*</li>
-                        </ul>
-
-                        <div class="display-5 fw-bold my-3">$900.00</div>
-                        <button class="btn btn-danger px-5 py-2 rounded-pill text-uppercase fw-semibold">Order
-                            now</button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="dark-blue-bg text-white p-4 Packages-main">
-                        <div class="fs-4 fw-bold">3D Logo</div>
-                        <ul class="p-0 m-0 overflow-auto Packages" style="height: 250px;">
-                            <li class="my-1">3 Unique 3D Logo Concepts</li>
-                            <li class="my-1">Light Effects and VFX</li>
-                            <li class="my-1">Fully Rendered</li>
-                            <li class="my-1">Multiple 3D Angles</li>
-                            <li class="my-1">3 Dedicated Designers</li>
-                            <li class="my-1">72 hours Turn Around Time</li>
-                            <li class="my-1">UNLIMITED Revisions</li>
-                            <li class="my-1"><span>MORE FEATURES</span></li>
-                            <li class="my-1">100% Ownership Rights</li>
-                            <li class="my-1">100% Satisfaction Guarantee</li>
-                            <li class="my-1">100% Unique Design Guarantee</li>
-                            <li class="my-1">100% Money Back Guarantee*</li>
-                        </ul>
-
-                        <div class="display-5 fw-bold my-3">$900.00</div>
-                        <button class="btn btn-danger px-5 py-2 rounded-pill text-uppercase fw-semibold">Order
-                            now</button>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="dark-blue-bg text-white p-4 Packages-main">
-                        <div class="fs-4 fw-bold">3D Logo</div>
-                        <ul class="p-0 m-0 overflow-auto Packages" style="height: 250px;">
-                            <li class="my-1">3 Unique 3D Logo Concepts</li>
-                            <li class="my-1">Light Effects and VFX</li>
-                            <li class="my-1">Fully Rendered</li>
-                            <li class="my-1">Multiple 3D Angles</li>
-                            <li class="my-1">3 Dedicated Designers</li>
-                            <li class="my-1">72 hours Turn Around Time</li>
-                            <li class="my-1">UNLIMITED Revisions</li>
-                            <li class="my-1"><span>MORE FEATURES</span></li>
-                            <li class="my-1">100% Ownership Rights</li>
-                            <li class="my-1">100% Satisfaction Guarantee</li>
-                            <li class="my-1">100% Unique Design Guarantee</li>
-                            <li class="my-1">100% Money Back Guarantee*</li>
-                        </ul>
-
-                        <div class="display-5 fw-bold my-3">$900.00</div>
-                        <button class="btn btn-danger px-5 py-2 rounded-pill text-uppercase fw-semibold">Order
-                            now</button>
-                    </div>
-                </div>
+            <div class="row flex-nowrap overflow-auto" id="logoPack">
+                <script>
+                    packages.logopack.forEach(element => {
+                        document.querySelector('#logoPack').innerHTML += `
+                        <div class="col-lg-4 col-md-6">
+                                <div class="dark-blue-bg text-white p-4 Packages-main">
+                                    <div class="fs-4 fw-bold">${element.name}</div>
+                                    <ul class="p-0 m-0 overflow-auto Packages listMain" style="height: 250px;"></ul>
+                                    <div class="display-5 fw-bold my-3">${element.price}</div>
+                                    <button class="btn btn-danger px-5 py-2 rounded-pill text-uppercase fw-semibold">Order now</button>
+                                </div>
+                        </div>`
+                        element.list.forEach(list => {
+                            let List = document.createElement('li')
+                            List.className = "my-1"
+                            List.innerHTML += list;
+                            document.querySelectorAll('.listMain').forEach(listMain => {
+                                listMain.appendChild(List.cloneNode(true));
+                            });
+                        });
+                    });
+                </script>
             </div>
         </div>
     </section>
