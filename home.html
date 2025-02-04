@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Home</title>
 </head>
 
@@ -41,21 +44,51 @@
         list-style: none;
         text-align: center;
     }
+
+    .peek-main {
+        position: fixed;
+        left: 0;
+        top: 20%;
+        z-index: 2;
+    }
+
+    .chat-peek:hover {
+        left: 0;
+    }
+
+    .phone-peek:hover {
+        left: 0;
+    }
+
+    .chat-peek,
+    .phone-peek {
+        border-radius: 0px 50px 50px 0px;
+        position: relative;
+        left: -74%;
+        transition: 0.2s ease-in-out;
+    }
+
+    .get-free-cul {
+        position: absolute;
+        transform: rotate(270deg);
+        left: -114px;
+        top: 254px;
+        border-radius: 0px 0px 20px 20px;
+    }
 </style>
 
 <body>
     <!-- navbar -->
-
     <div class="nav-bg position-relative overflow-hidden">
-        <video class="w-100 position-absolute z-3 top-0 home-banner-vid vh-100" playsinline="" muted="" loop=""
-            preload="auto" autoplay="" style="object-fit: cover;">
+        <video class="w-100 position-absolute z-3 top-0 home-banner-vid" playsinline="" muted="" loop="" preload="auto"
+            autoplay="" style="object-fit: cover;">
             <source src="accets/videos/Home-banner.mp4" type="video/mp4">
         </video>
 
-        <div class="position-relative top-0 bg-tint vh-100">
+        <div class="position-relative top-0 bg-tint ">
             <nav class="d-flex">
-                <div class="container d-flex align-items-center py-3">
-                    <div class=" side-nav-tog">
+                <div class="container d-flex align-items-center py-3 gap-4">
+                    <div class="side-nav-tog">
                         <i class="fs-1 text-white ri-menu-line"></i>
                     </div>
                     <a class="navbar-brand" href="home.html"><img src="accets/images/logo_lite.png" width="200dvw"
@@ -64,36 +97,48 @@
             </nav>
             <!-- <div cla> -->
             <div class="container py-5">
-                <div class="text-white display-1 fw-bold lh-1">Exceptional <br> Digital <br> Solutions</div>
+                <div class="text-white display-1 fw-bold lh-1" data-aos="fade-up" data-aos-duration="2000">Exceptional
+                    <br> Digital <br> Solutions
+                </div>
 
-                <div class="text-white display-6 fw-semibold my-5">Empowering your brand <br> to stand unmatched</div>
+                <div class="text-white display-6 fw-semibold my-5" data-aos="fade-up" data-aos-duration="2000">
+                    Empowering your brand <br> to stand unmatched</div>
 
-
-                <div class="d-md-block d-none home-banner-nav">
+                <div class=" overflow-auto">
                     <ul class="p-0 m-0 d-flex align-items-center">
                         <li class="nav-item ">
-                            <a class="nav-link border px-4 py-3 banner-nav" aria-current="page" href="#logo">Logos</a>
+                            <a class="nav-link border px-4 py-3 banner-nav text-nowrap" aria-current="page"
+                                href="#logo">Logos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link border px-4 py-3 banner-nav" aria-current="page" href="#web">Websites</a>
+                            <a class="nav-link border px-4 py-3 banner-nav text-nowrap" aria-current="page"
+                                href="#web">Websites</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link border px-4 py-3 banner-nav" aria-current="page"
+                            <a class="nav-link border px-4 py-3 banner-nav text-nowrap" aria-current="page"
                                 href="#print">Printing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link border px-4 py-3 banner-nav" aria-current="page" href="#seo">SEO</a>
+                            <a class="nav-link border px-4 py-3 banner-nav text-nowrap" aria-current="page"
+                                href="#seo">SEO</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link border px-4 py-3 banner-nav" aria-current="page" href="#app">Mobile
+                            <a class="nav-link border px-4 py-3 banner-nav text-nowrap" aria-current="page"
+                                href="#app">Mobile
                                 Apps</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link border px-4 py-3 banner-nav" aria-current="page"
+                            <a class="nav-link border px-4 py-3 banner-nav text-nowrap" aria-current="page"
                                 href="#anim">Animations</a>
                         </li>
                     </ul>
                 </div>
+
+                <div class="d-md-none d-flex align-items-center gap-2 justify-content-center">
+                    <i class="ri-facebook-circle-fill display-3 text-white"></i>
+                    <div class="fs-4 my-5 btn btn-outline-light rounded-pill px-4">Start your project</div>
+                </div>
+
             </div>
             <!-- </div> -->
         </div>
@@ -122,10 +167,28 @@
     <!-- Navbar end -->
 
 
+    <div class="peek-main">
+        <div class="position-relative">
+            <button
+                class="border border-danger border-2 bg-white d-block my-1 logo-design-text ps-4 py-3 fs-4 chat-peek">Chat
+                With Us <i class="px-3 fs-4 ri-chat-3-fill"></i></button>
+            <button
+                class="border border-danger border-2 bg-white d-block my-1 logo-design-text ps-4 py-3 fs-4 phone-peek">00000000000
+                <i class="px-3 fs-4 ri-phone-fill"></i></button>
+            <a href="Contact.html">
+                <button
+                    class="border border-danger border-2 bg-white d-block my-1 logo-design-text px-4 py-3 fs-4 get-free-cul">Get
+                    Free Consultancy</button>
+            </a>
+        </div>
+    </div>
+
+
     <!-- logo design -->
     <section class="py-5 logo-design logos-background-image" id="logo">
         <div class="container">
-            <h2 class="display-2 fw-xbold mb-3">Logo Design</h2>
+            <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Logo
+                Design</h2>
 
             <div class="category-sections overflow-hidden">
                 <video class="w-100" playsinline="" muted="" loop="" preload="auto" autoplay="">
@@ -202,7 +265,7 @@
     <!-- Website Design -->
     <section class="py-5 web-design logos-background-image" id="web">
         <div class="container">
-            <h2 class="display-2 fw-xbold mb-3">Website Design</h2>
+            <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Website Design</h2>
 
             <div class="category-sections overflow-hidden">
                 <video class="w-100" playsinline="" muted="" loop="" preload="auto" autoplay="">
@@ -216,7 +279,7 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
                             <p class="fs-5 text-muted">From the initial idea to production, delivery, and ongoing
-                                support, Code n Logos provides exceptional web design and development services to
+                                support, WebzVision provides exceptional web design and development services to
                                 enhance your brand’s presence and create a strong digital footprint for your business.
                             </p>
                             <p class="fs-5 text-muted my-4">Our web design services are tailored to meet your specific
@@ -282,7 +345,7 @@
     <!-- printing -->
     <section class="py-5 printing logos-background-image" id="print">
         <div class="container">
-            <h2 class="display-2 fw-xbold mb-3">printing</h2>
+            <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Printing</h2>
 
             <div class="category-sections overflow-hidden">
                 <video class="w-100" playsinline="" muted="" loop="" preload="auto" autoplay="">
@@ -296,7 +359,7 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
                             <p class="fs-5 text-muted">From the initial concept to production, delivery, and continuous
-                                maintenance, Code n Logos provides top-notch web design and development services. We
+                                maintenance, WebzVision provides top-notch web design and development services. We
                                 help shape a stronger brand presence and craft an outstanding digital footprint for your
                                 business.
                             </p>
@@ -361,7 +424,7 @@
     <!-- seo -->
     <section class="py-5 seo logos-background-image" id="seo">
         <div class="container">
-            <h2 class="display-2 fw-xbold mb-3">SEO</h2>
+            <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">SEO</h2>
 
             <div class="category-sections overflow-hidden">
                 <video class="w-100" playsinline="" muted="" loop="" preload="auto" autoplay="">
@@ -374,7 +437,7 @@
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
-                            <p class="fs-5 text-muted">From idea to launch, and ongoing support, Code n Logos delivers
+                            <p class="fs-5 text-muted">From idea to launch, and ongoing support, WebzVision delivers
                                 exceptional web design and development services to shape your brand’s presence and
                                 establish a powerful digital footprint.
                             </p>
@@ -435,7 +498,7 @@
     <!-- Mobile Applications -->
     <section class="py-5 Mobile-Applications logos-background-image" id="app">
         <div class="container">
-            <h2 class="display-2 fw-xbold mb-3">Mobile Applications</h2>
+            <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Mobile Applications</h2>
 
             <div class="category-sections overflow-hidden">
                 <video class="w-100" playsinline="" muted="" loop="" preload="auto" autoplay="">
@@ -449,7 +512,7 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
                             <p class="fs-5 text-muted">From the initial concept to production, delivery, and ongoing
-                                maintenance, Code n Logos provides outstanding web design and development services. We
+                                maintenance, WebzVision provides outstanding web design and development services. We
                                 help shape a strong brand image and create a distinctive digital presence for your
                                 business.
                             </p>
@@ -519,7 +582,7 @@
     <!-- Video-Animation -->
     <section class="py-5 Video-Animation logos-background-image" id="anim">
         <div class="container">
-            <h2 class="display-2 fw-xbold mb-3">Video Animation</h2>
+            <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Video Animation</h2>
 
             <div class="category-sections overflow-hidden">
                 <video class="w-100" playsinline="" muted="" loop="" preload="auto" autoplay="">
@@ -533,7 +596,7 @@
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
                             <p class="fs-5 text-muted">From concept development to production, delivery, and ongoing
-                                maintenance, Code n Logos provides exceptional web design and development services. We
+                                maintenance, WebzVision provides exceptional web design and development services. We
                                 help shape a strong brand image and create a powerful digital footprint for your
                                 business.
                             </p>
@@ -605,7 +668,8 @@
     <!-- Our Portfolio -->
     <section class="py-5 dark-blue-bg">
         <div class="container p-md-2 px-4">
-            <div class="logo-design-text display-1 fw-xbold lh-1 mb-5">Our Portfolio <br><span class="text-white">
+            <div class="logo-design-text display-1 fw-xbold lh-1 mb-5" data-aos="fade-up" data-aos-duration="2000">Our
+                Portfolio <br><span class="text-white">
                     Speaks for
                     Us</span></div>
             <div class="row">
@@ -664,57 +728,112 @@
     <!-- Our Portfolio end -->
 
 
-        <!--  Testimonials -->
-        <section class="py-5 bg-secondary" id="WebTest">
-            <div class="container p-md-2 px-4">
-    
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div>
-                            <div class=" display-4 fw-xbold text-white">Testimonials</div>
-                        </div>
+    <!--  Testimonials -->
+    <section class="py-5 bg-secondary" id="WebTest">
+        <div class="container p-md-2 px-4">
+            <div class="">
+                <div class="">
+                    <div>
+                        <div class=" display-4 fw-xbold text-white">Testimonials</div>
                     </div>
-                    <div class="col-lg-6 py-4">
-                        <div class="autoplay py-4">
-                            <div class="text-white">
-                                <p>
-                                    I love our new website. It converts visitors significantly better than
-                                    the previous one. I worked with many other web design companies and
-                                    Code n Logos was most professional.
+                </div>
+                <div class=" py-4">
+                    <div class="center py-4">
+                        <div class="px-2">
+                            <div class="bg-black text-white p-4 rounded-4 d-flex flex-column justify-content-between"
+                                style="height: 300px !important;">
+                                <p>designed my flyer exactly to my specifications. went above and beyond with my many
+                                    revisions. Excellent response time and so patient and quick turnaround. Highly
+                                    recommend.
                                 </p>
                                 <div class="d-flex align-items-center gap-3">
                                     <img src="accets/images/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
                                         width="40" height="40" alt="">
                                     <div>
-                                        <div class="fw-bold">Adam Johnson, <span class="fw-normal">Director of Digital
-                                                Development</span></div>
-                                        <div>Camping World</div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="text-white">
-                                <p>
-                                    I love our new website. It converts visitors significantly better than
-                                    the previous one. I worked with many other web design companies and
-                                    Code n Logos was most professional.
-                                </p>
-                                <div class="d-flex align-items-center gap-3">
-                                    <img src="accets/images/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
-                                        width="40" height="40" alt="">
-                                    <div>
-                                        <div class="fw-bold">Adam Johnson, <span class="fw-normal">Director of Digital
-                                                Development</span></div>
+                                        <div class="fw-bold">Lesley Gendelman</div>
                                         <div>Camping World</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="px-2">
+                            <div class="bg-black text-white p-4 rounded-4 d-flex flex-column justify-content-between"
+                                style="height: 300px !important;">
+                                <p>Brought my logo vision to life! I posted on fb looking for someone & was bombarded
+                                    with
+                                    spammers or completely out of my budget. WebzVision was great at communicating,
+                                    FAST,
+                                    efficient & so kind! I could not recommend a better company!
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="accets/images/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
+                                        width="40" height="40" alt="">
+                                    <div>
+                                        <div class="fw-bold">Courtney’s Cluckers</div>
+                                        <div>Camping World</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <div class="bg-black text-white p-4 rounded-4 d-flex flex-column justify-content-between"
+                                style="height: 300px !important;">
+                                <p>I 100% recommend WebzVision, they are really quick and look after their customers.
+                                    Mark Thompson created my logos, definitely will use them again.
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="accets/images/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
+                                        width="40" height="40" alt="">
+                                    <div>
+                                        <div class="fw-bold">Ugnius Ratkelis</div>
+                                        <div>Camping World</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <div class="bg-black text-white p-4 rounded-4 d-flex flex-column justify-content-between"
+                                style="height: 300px !important;">
+                                <p>I would definitely recommend WebzVision for all your graphic design needs. They are
+                                    quick, creative, and listen to what you need. I’m very satisfied with my purchase
+                                    and will use them again in the future.
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="accets/images/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
+                                        width="40" height="40" alt="">
+                                    <div>
+                                        <div class="fw-bold">Vianka cotton</div>
+                                        <div>Camping World</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <div class="bg-black text-white p-4 rounded-4 d-flex flex-column justify-content-between"
+                                style="height: 300px !important;">
+                                <p>The very best and very helpful.You need a logo this is the company
+                                    Pops Foster
+                                </p>
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="accets/images/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
+                                        width="40" height="40" alt="">
+                                    <div>
+                                        <div class="fw-bold">Pops Foster</div>
+                                        <div>Camping World</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- Testimonials end -->
+            <a target="_blank" href="https://www.facebook.com/people/WebzVision/61561188833677/?sk=reviews">
+                <button class="btn btn-light mx-auto d-block fw-semibold px-4 py-2">View more reviews</button>
+            </a>
+        </div>
+    </section>
+    <!-- Testimonials end -->
 
 
 
@@ -780,7 +899,7 @@
 
             <div class="row text-light justify-content-md-between justify-content-center text-center border-top py-3">
                 <div class="col-md-auto">
-                    <div>© 1997-2024 All rights reserved Code n Logos</div>
+                    <div>© 1997-2024 All rights reserved WebzVision</div>
                 </div>
                 <div class="col-md-auto">
                     <div class="">
@@ -812,20 +931,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
         integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 
 
     <script>
 
-        $('.autoplay').slick({
-            arrows: false,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 5000,
-            verticalSwiping: true,
-            vertical: true,
-            dots: true,
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
+
     </script>
 </body>
 
