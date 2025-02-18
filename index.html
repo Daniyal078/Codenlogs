@@ -64,7 +64,7 @@
     .phone-peek {
         border-radius: 0px 50px 50px 0px;
         position: relative;
-        left: -74%;
+        left: -75%;
         transition: 0.2s ease-in-out;
     }
 
@@ -75,23 +75,36 @@
         top: 254px;
         border-radius: 0px 0px 20px 20px;
     }
+
+
+    /* .sticky-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        background-color: #00000082;
+        backdrop-filter: blur(10px);
+    } */
 </style>
+
 
 <body>
     <!-- navbar -->
     <div class="nav-bg position-relative overflow-hidden">
-        <video class="w-100 position-absolute z-3 top-0 home-banner-vid" playsinline="" muted="" loop="" preload="auto"
-            autoplay="" style="object-fit: cover;">
+        <video class="w-100 position-absolute z-3 top-0 home-banner-vid" playsinline muted loop preload="auto" autoplay
+            style="object-fit: cover;">
             <source src="accets/videos/Home-banner.mp4" type="video/mp4">
         </video>
 
-        <div class="position-relative top-0 bg-tint ">
-            <nav class="d-flex">
-                <div class="container d-flex align-items-center py-3 gap-4">
+
+        <div class=" top-0 bg-tint ">
+            <nav class="navBar position-relative d-flex">
+                <div class="container d-flex align-items-center py-3 gap-5 gap-5">
                     <div class="side-nav-tog">
                         <i class="fs-1 text-white ri-menu-line"></i>
                     </div>
-                    <a class="navbar-brand" href="home.html"><img src="accets/images/logo_lite.png" width="200dvw"
+                    <a class="navbar-brand" href="index.html"><img src="accets/images/logo_lite.png" width="200dvw"
                             alt=""></a>
                 </div>
             </nav>
@@ -163,11 +176,9 @@
         </ul>
     </div>
     <!-- side navbar end -->
-
     <!-- Navbar end -->
 
-
-    <div class="peek-main">
+    <div class="peek-main d-none">
         <div class="position-relative">
             <button
                 class="border border-danger border-2 bg-white d-block my-1 logo-design-text ps-4 py-3 fs-4 chat-peek">Chat
@@ -175,7 +186,7 @@
             <button
                 class="border border-danger border-2 bg-white d-block my-1 logo-design-text ps-4 py-3 fs-4 phone-peek">00000000000
                 <i class="px-3 fs-4 ri-phone-fill"></i></button>
-            <a href="Contact.html">
+            <a href="conta">
                 <button
                     class="border border-danger border-2 bg-white d-block my-1 logo-design-text px-4 py-3 fs-4 get-free-cul">Get
                     Free Consultancy</button>
@@ -183,9 +194,8 @@
         </div>
     </div>
 
-
     <!-- logo design -->
-    <section class="py-5 logo-design logos-background-image" id="logo">
+    <section class="py-5 logo-design logos-background-image ps-lg-0 ps-5" id="logo">
         <div class="container">
             <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Logo
                 Design</h2>
@@ -196,7 +206,7 @@
                 </video>
             </div>
 
-            <div class="p-4 mx-auto d-block">
+            <div class="p-lg-4 mx-auto d-block">
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
@@ -230,7 +240,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="shadow bg-white w-auto p-5 top-elevated">
+                        <div class="shadow bg-white w-auto p-lg-5 p-md-3 p-2 top-elevated">
                             <ul class="p-0 m-0">
                                 <li class="py-2"> <a class="text-muted" href="Logo-design.html#LogoWeMake"><i
                                             class="fs-4 me-2 web-design-text ri-focus-2-line"></i> Logos we make</a>
@@ -257,13 +267,12 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <!-- logo design end -->
 
 
     <!-- Website Design -->
-    <section class="py-5 web-design logos-background-image" id="web">
+    <section class="py-5 web-design logos-background-image ps-lg-0 ps-5" id="web">
         <div class="container">
             <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Website Design</h2>
 
@@ -274,7 +283,7 @@
             </div>
 
 
-            <div class="p-4 mx-auto d-block">
+            <div class="p-lg-4 mx-auto d-block">
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
@@ -309,7 +318,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="shadow bg-white w-auto p-5 top-elevated">
+                        <div class="shadow bg-white w-auto p-lg-5 p-md-3 p-2 top-elevated">
                             <ul class="p-0 m-0">
                                 <li class="py-2"> <a class="text-muted" href="Web-developement.html#WebWeMake"><i
                                             class="fs-4 me-2 web-design-text ri-focus-2-line"></i> Websites we make
@@ -337,13 +346,12 @@
                 </div>
             </div>
         </div>
-        </div>
     </section>
     <!-- Website Design end -->
 
 
     <!-- printing -->
-    <section class="py-5 printing logos-background-image" id="print">
+    <section class="py-5 printing logos-background-image ps-lg-0 ps-5" id="print">
         <div class="container">
             <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Printing</h2>
 
@@ -354,7 +362,7 @@
             </div>
 
 
-            <div class="p-4 mx-auto d-block">
+            <div class="p-lg-4 mx-auto d-block">
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
@@ -390,7 +398,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="shadow bg-white w-auto p-5 top-elevated">
+                        <div class="shadow bg-white w-auto p-lg-5 p-md-3 p-2 top-elevated">
                             <ul class="p-0 m-0">
                                 <li class="py-2"> <a class="text-muted" href="Printing.html#PrintWeMake"><i
                                             class="fs-4 me-2 printing-text ri-focus-2-line"></i> Printing we make
@@ -422,7 +430,7 @@
 
 
     <!-- seo -->
-    <section class="py-5 seo logos-background-image" id="seo">
+    <section class="py-5 seo logos-background-image ps-lg-0 ps-5" id="seo">
         <div class="container">
             <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">SEO</h2>
 
@@ -433,7 +441,7 @@
             </div>
 
 
-            <div class="p-4 mx-auto d-block">
+            <div class="p-lg-4 mx-auto d-block">
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
@@ -467,7 +475,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="shadow bg-white w-auto p-5 top-elevated">
+                        <div class="shadow bg-white w-auto p-lg-5 p-md-3 p-2 top-elevated">
                             <ul class="p-0 m-0">
                                 <li class="py-2"> <a class="text-muted" href="SEO.html#seoWeMake"><i
                                             class="fs-4 me-2 seo-text ri-focus-2-line"></i> Search Engin Optimization
@@ -496,7 +504,7 @@
 
 
     <!-- Mobile Applications -->
-    <section class="py-5 Mobile-Applications logos-background-image" id="app">
+    <section class="py-5 Mobile-Applications logos-background-image ps-lg-0 ps-5" id="app">
         <div class="container">
             <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Mobile Applications</h2>
 
@@ -507,7 +515,7 @@
             </div>
 
 
-            <div class="p-4 mx-auto d-block">
+            <div class="p-lg-4 mx-auto d-block">
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
@@ -542,7 +550,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="shadow bg-white w-auto p-5 top-elevated">
+                        <div class="shadow bg-white w-auto p-lg-5 p-md-3 p-2 top-elevated">
                             <ul class="p-0 m-0">
                                 <li class="py-2"> <a class="text-muted" href="Mobile-Applications.html#appWeMake"><i
                                             class="fs-4 me-2 Mobile-Applications-text ri-focus-2-line"></i> Mobile
@@ -580,7 +588,7 @@
 
 
     <!-- Video-Animation -->
-    <section class="py-5 Video-Animation logos-background-image" id="anim">
+    <section class="py-5 Video-Animation logos-background-image ps-lg-0 ps-5" id="anim">
         <div class="container">
             <h2 class="display-2 fw-xbold mb-3" data-aos="fade-up" data-aos-duration="2000">Video Animation</h2>
 
@@ -591,7 +599,7 @@
             </div>
 
 
-            <div class="p-4 mx-auto d-block">
+            <div class="p-lg-4 mx-auto d-block">
                 <div class="row flex-md-row flex-column-reverse justify-content-evenly">
                     <div class="col-lg-5 col-md-6">
                         <div class="m-3">
@@ -627,7 +635,7 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
-                        <div class="shadow bg-white w-auto p-5 top-elevated">
+                        <div class="shadow bg-white w-auto p-lg-5 p-md-3 p-2 top-elevated">
                             <ul class="p-0 m-0">
                                 <li class="py-2"> <a class="text-muted" href="Video-Animations.html#videoWeMake"><i
                                             class="fs-4 me-2 Video-Animation-text ri-focus-2-line"></i> Video Animation
@@ -675,7 +683,7 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 p-0">
                     <div>
-                        <img class="" src="accets/images/Logo Portfolio/logo-898 (5).jpg" width="100%" alt="">
+                        <img class="" src="accets/images/Logo Portfolio/illustration/4.jpg" width="100%" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -906,7 +914,7 @@
                         <ul class="d-flex align-items-center justify-content-center gap-3 p-0 m-0">
                             <li>Terms and Conditions</li>
                             |
-                            <li>Privacy Policy</li>
+                            <li><a class="text-white" href="Privacy-policy.html">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
@@ -921,6 +929,23 @@
         })
         document.querySelector('.side-nav-close').addEventListener('click', () => {
             document.querySelector('.side-nav').style.left = "-100%"
+        })
+
+
+        let scrollPos = "500";
+        let EndPos = "900";
+
+        document.addEventListener('scroll', () => {
+            let sy = window.scrollY
+            if (Math.ceil(sy) > scrollPos) {
+                document.querySelector('.peek-main').classList.remove('d-none')
+                // document.querySelector('.navBar').classList.add('sticky-nav')
+                // document.querySelector('.navBar').classList.remove('position-relative')
+            } else if (Math.ceil(sy) < scrollPos) {
+                document.querySelector('.peek-main').classList.add('d-none')
+                // document.querySelector('.navBar').classList.remove('sticky-nav')
+                // document.querySelector('.navBar').classList.add('position-relative')
+            } 
         })
     </script>
 
